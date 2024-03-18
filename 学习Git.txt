@@ -1,0 +1,33 @@
+git
+1、git使用
+git的全局配置
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+2、创建git版本
+mkdir   learngit --创建文件夹
+Cd  learngit --进入文件夹
+Git init 版本库初始化 --让这个文件成为git
+1.txt 在版本库添加文件
+Git add 1.txt
+Git commit -m "init 1.txt"
+............................................................................
+Git add . --批量添加
+3、版本回退
+Git log  --版本日志
+Git reset --hard HEAD~1
+GIT reflog --查看每一次命令
+Git reset --hard  id --返回每个操作的Id
+4、删除文件
+Git rm 1.txt
+Git commit -m "rm 1.txt"
+5、远程仓库
+5.1 添加远程仓库
+Git remote add origin XXXXX.git
+Git pull origin master --仓库里面有文件，最初一定要pull一下
+git pull --allow-unrelated-histories origin master  --原因是两个分支是两个不同的版本，具有不同的提交历史
+---错误：refusing to merge unrelated histories
+Git push -u origin master  --第一次推送要加上用户名和密码
+Git push  origin master --后面可以直接推送
+5.2 从远程仓库clone
+
+
